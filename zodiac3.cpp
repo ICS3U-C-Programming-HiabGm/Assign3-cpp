@@ -14,19 +14,18 @@ std::cin >> day;
         // Validate input 
     if (month < 1 || month > 12 || day < 1 || day > 31) {
     std::cout << "Invalid date! Month must be 1-12 and day must be 1-31.\n";
-    return;
-    }
+    return;}
 
 std::string sign = "Zodiac";
 if ((month == 1 && day >= 20) || (month == 2 && day <= 18)) {
-sign = "Aquarius";
-} else if ((month == 2 && day >= 19) || (month == 3 && day <= 20)) {
-sign = "Pisces";
-} else if ((month == 3 && day >= 21) || (month == 4 && day <= 19)) {
-sign = "Aries";
-} else if ((month == 4 && day >= 20) || (month == 5 && day <= 20)) {
-sign = "Taurus";
-} else if ((month == 5 && day >= 21) || (month == 6 && day <= 20)) {
+sign = "Aquarius";}
+else if ((month == 2 && day >= 19) || (month == 3 && day <= 20)) {
+sign = "Pisces";}
+else if ((month == 3 && day >= 21) || (month == 4 && day <= 19)) {
+sign = "Aries";}
+else if ((month == 4 && day >= 20) || (month == 5 && day <= 20)) {
+sign = "Taurus";}
+else if ((month == 5 && day >= 21) || (month == 6 && day <= 20)) {
 sign = "Gemini";}
 else if ((month == 6 && day >= 21) || (month == 7 && day <= 22)) {
 sign = "Cancer";}
