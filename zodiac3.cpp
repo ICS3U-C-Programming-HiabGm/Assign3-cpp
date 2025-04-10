@@ -11,13 +11,11 @@ std::cin >> month;
 std::cout << "Enter your birth day (1-31): ";
 std::cin >> day;
 
-    // to prevent invalid dates and months  
 if (month < 1 || month > 12 || day < 1 || day > 31) {
-std::cout << "Invalid date! Month must be 1-12 and day must be 1-31.\n";}
-return 0;
+std::cout << "Invalid date! Month must be 1-12 and day must be 1-31.\n";
+return 1;
 
-
-std::string sign = "Zodiac";
+    std::string sign = "Zodiac";
 if ((month == 1 && day >= 20) || (month == 2 && day <= 18)) {
 sign = "Aquarius";}
 else if ((month == 2 && day >= 19) || (month == 3 && day <= 20)) {
@@ -49,3 +47,4 @@ std::cout << "Your zodiac sign is: " << sign << std::endl;
 std::cout << "Invalid input! Please enter numbers only.\n";
     }
 }
+return 0;
