@@ -27,8 +27,7 @@ sign = "Aries";
 } else if ((month == 4 && day >= 20) || (month == 5 && day <= 20)) {
 sign = "Taurus";
 } else if ((month == 5 && day >= 21) || (month == 6 && day <= 20)) {
-sign = "Gemini";
-}
+sign = "Gemini";}
 else if ((month == 6 && day >= 21) || (month == 7 && day <= 22)) {
 sign = "Cancer";}
 else if ((month == 7 && day >= 23) || (month == 8 && day <= 22)) {
